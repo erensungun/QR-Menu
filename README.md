@@ -2,6 +2,6 @@
 
 Aralıklarla güncelleyeceğim bir proje olan QR Menu projem.
 
-##Eren Süngün
+## Eren Süngün
 
 [linkedin](https://www.linkedin.com/in/erensungun/)
