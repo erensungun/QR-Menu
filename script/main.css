@@ -48,6 +48,7 @@ nav button {
 .home{
     text-align: center;
     padding: 20px 0;
+    border-style: solid;
 }
 
 .home img {
@@ -62,12 +63,18 @@ nav button {
 }
 
 .corba{
-    margin-bottom: 1rem;
+    border-style: solid;
+    padding: 1rem;
     text-align: center;
 }
 
 .bosluk{
     border-style: solid;
+}
+
+.footer{
+    background-color: #f5f5f5;
+    padding: 1rem 1rem;
 }
 
 #myBtn {
