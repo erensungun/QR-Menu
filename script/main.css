@@ -47,12 +47,14 @@ nav button {
 
 .home{
     text-align: center;
-    padding: 20px;
+    padding: 20px 0;
 }
 
-.home img{
-    width: 75vw;
-    text-align: center;
+.home img {
+    width: 100%;
+    max-width: 75vw;
+    display: block;
+    margin: 0 auto;
 }
 
 .home h1{
