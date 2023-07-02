@@ -6,10 +6,10 @@
 
 @media (max-width: 991px) {
     .navbar-nav .nav-link {
-        background-color:#bebebe; /* Mobil arka plan rengi */
+        background-color:#f1f1f1; /* Mobil arka plan rengi */
     }
     .navbar-collapse{
-        background-color: #bebebe;
+        background-color: #f1f1f1;
     }
 }
 
@@ -29,6 +29,13 @@
     background-color: #f5f5f5;
     z-index: 100;
     position: sticky;
+    box-shadow:
+        2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+        6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+        22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+        41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+        100px 100px 80px rgba(0, 0, 0, 0.07);
 }
 
 
@@ -45,10 +52,16 @@ nav button {
     font-weight: 600;
 }
 
+
+.nav-link:hover{
+    border-bottom-style: solid;
+    border-width: 3px;
+    font-weight: 700;
+}
+
 .home{
     text-align: center;
     padding: 20px 0;
-    border-style: solid;
 }
 
 .home img {
@@ -63,18 +76,78 @@ nav button {
 }
 
 .corba{
-    border-style: solid;
     padding: 1rem;
+}
+
+.icerik{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     text-align: center;
 }
 
-.bosluk{
-    border-style: solid;
+.icerik .card{
+    width: 100%;
+    margin: .7rem 0;
+    box-shadow:
+        1.6px 1.6px 1.2px rgba(0, 0, 0, 0.07),
+        3.4px 3.4px 2.7px rgba(0, 0, 0, 0.055),
+        5.8px 5.8px 4.6px rgba(0, 0, 0, 0.048),
+        8.7px 8.7px 6.9px rgba(0, 0, 0, 0.043),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.039),
+        17.7px 17.7px 14.2px rgba(0, 0, 0, 0.035),
+        25.1px 25.1px 20.1px rgba(0, 0, 0, 0.031),
+        36.5px 36.5px 29.2px rgba(0, 0, 0, 0.027),
+        56.3px 56.3px 45px rgba(0, 0, 0, 0.022),
+        100px 100px 80px rgba(0, 0, 0, 0.015);
+}
+
+.aciklama{
+    justify-content: center;
+}
+
+.altcizgi{
+    text-decoration: underline;
+}
+
+.red{
+    color: red;
+    font-weight: 700;
+}
+
+.card-body div{
+    margin: auto 0;
 }
 
 .footer{
     background-color: #f5f5f5;
     padding: 1rem 1rem;
+    text-align: center;
+    box-shadow:
+        20px -20px 60px #d0d0d0,
+        -20px 20px 60px #f0f0f0;
+}
+
+.sosyal-medya a{
+    display: inline-grid;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    background: transparent;
+    border: .2rem solid #323946;
+    border-radius: 50%;
+    font-size: 1.7rem;
+    color: #323946;
+    margin: 1rem 0.6rem 1rem 0;
+    text-decoration: none;
+    transition: .40s ease;
+}
+
+.sosyal-medya a:hover {
+    background: #323946;
+    color: #f7f7f7;
+    box-shadow: 0 0 1rem #323946;
 }
 
 #myBtn {

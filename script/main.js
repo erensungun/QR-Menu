@@ -44,6 +44,8 @@ document.querySelectorAll('.navbar-nav .nav-link').forEach(function(element) {
       top: targetPosition,
       behavior: 'smooth'
     });
+    // Menü tuşuna tıklandığında menü simgesini "fa-bars" olarak güncelle
+    menuIcon.className = 'fa-solid fa-bars';
   });
 });
 
