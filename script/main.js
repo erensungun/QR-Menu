@@ -61,3 +61,12 @@ menuButton.addEventListener('click', function() {
   menuButton.setAttribute('aria-expanded', isExpanded ? 'true' : 'false');
   menuIcon.className = isExpanded ? 'fa-solid fa-times' : 'fa-solid fa-bars';
 });
+
+var counter = 1;
+setInterval(function(){
+  document.getElementById('radio' + counter).checked = true;
+  counter++;
+  if(counter>4){
+    counter=1;
+  }
+},5000);
