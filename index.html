@@ -5,21 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="script/main.css?v=2">
+    <link rel="stylesheet" href="script/main.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
 
     <title>Eren QR Menü</title>
+
+    <style>
+        .nav-pills{
+            --bs-nav-pills-link-active-bg: #dddddd;
+        }
+    </style>
 </head>
 <body>
     
-    <nav class="navbar navbar-expand-lg ml-auto py-0 sticky-top">
-        <img class="logo" src="image/logo.webp" alt="Mağaza Logosu">
+    <nav class="navbar navbar-expand-lg ml-auto py-0 sticky-top" id="navbar">
+        <a href="#" class="Brand"><h2 class="m-0">Brand Logo</h2></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="menuButton">
             <i class="fa-solid fa-bars" id="menuIcon"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav me-auto mb-lg-0">
+            <ul class="navbar-nav me-auto mb-lg-0 nav-pills">
                 <li class="nav-item">
                     <a class="nav-link" href="#corba">Çorba</a>
                 </li>
@@ -33,43 +39,9 @@
         </div>
     </nav>
 
-    <div class="container">
+    <div class="container" data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-body-tertiary p-3 rounded-2" tabindex="0">
         <section class="home" id="home">
-            <div class="slider">
-                <div class="slides">
-
-                    <input type="radio" name="radio-btn" id="radio1" checked>
-                    <input type="radio" name="radio-btn" id="radio2">
-                    <input type="radio" name="radio-btn" id="radio3">
-                    <input type="radio" name="radio-btn" id="radio4">
-
-                    <div class="slide first">
-                        <img src="image/ana.webp" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="image/ana.webp" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="image/ana.webp" alt="">
-                    </div>
-                    <div class="slide">
-                        <img src="image/ana.webp" alt="">
-                    </div>
-
-                    <div class="navigation-auto">
-                        <div class="auto-btn1"></div>
-                        <div class="auto-btn2"></div>
-                        <div class="auto-btn3"></div>
-                        <div class="auto-btn4"></div>
-                    </div>
-                </div>
-                <div class="navigation-manual">
-                    <label for="radio1" class="manual-btn"></label>
-                    <label for="radio2" class="manual-btn"></label>
-                    <label for="radio3" class="manual-btn"></label>
-                    <label for="radio4" class="manual-btn"></label>
-                </div>
-            </div>
+            <img src="image/ana.jpg" alt="Mağaza Resmi">
             <h1>QR Menü Sitesi</h1>
             <h2>Hoş Geldiniz!</h2>
         </section>
@@ -102,31 +74,8 @@
                     </div>
                     </div>
             </div>
-            <div class="icerik">
-                <div class="card">
-                    <img src="image/ph.png">
-                    <div class="card-body row">
-                        <div class="col-9">
-                            <h5 class="altcizgi m-0">Domatesli Tel Şehriye Çorbası</h5>
-                        </div>
-                        <div class="col-3">
-                            <p class="altcizgi m-0 red">35 ₺</p>
-                        </div>
-                    </div>
-                </div>
 
-                    <div class="card">
-                    <img src="image/ph.png">
-                    <div class="card-body">
-                        <div class="row aciklama">
-                            <h5>Havuçlu Şehriye Çorbası</h5>
-                            <div class="m-auto pt-2">
-                                <p class="altcizgi m-0 red">35 ₺</p>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-            </div>
+
             <div class="icerik">
                 <div class="card">
                     <img src="image/ph.png">
@@ -182,31 +131,8 @@
                 </div>
                 </div>
             </div>
-            <div class="icerik">
-                <div class="card" style="width: 49%;">
-                    <img src="image/ph.png">
-                    <div class="card-body row aciklama">
-                        <h5 class="altcizgi">Lokanta Usülü Terbiyeli Tavuk Çorbası</h5>
-                        <div class="m-auto py-2">
-                            <p class="m-0 red">35 ₺</p>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="card" style="width: 49%;">
-                <img src="image/ph.png">
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col-8">
-                            <h5 class="m-0">Mısır Unlu Cennet Çorbası</h5>
-                        </div>
-                        <div class="col-4">
-                            <p class="m-0 red">35 ₺</p>
-                        </div>
-                    </div>
-                </div>
-                </div>
-            </div>
+
             <div class="icerik">
                 <div class="card" style="width: 49%;">
                     <img src="image/ph.png">
@@ -267,6 +193,8 @@
                     </div>
                     </div>
             </div>
+
+
             <div class="icerik">
                 <div class="card mb-3" style="width: 100%;">
                     <div class="row g-0">
@@ -296,42 +224,12 @@
                         </div>
                     </div>
                     </div>
-            </div>
-            <div class="icerik">
-                <div class="card mb-3" style="width: 100%;">
-                    <div class="row g-0">
-                        <div class="col-4">
-                            <img src="image/phv.png" class="img-fluid rounded-start" alt="...">
-                        </div>
-                        <div class="col-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Hamburger</h5>
-                                <small><p class="card-text">Özel Yapım Hamburger Ekmeği Ve Dana Kıymasıyla Hazırlanan Köfte ile içinde Marul, Domates, Kornişon Turşu Yanında Patates, Kızartması Eşliğinde</p></small>
-                                <p class="card-text red pt-2">35 ₺</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card mb-3" style="width: 100%;">
-                    <div class="row g-0">
-                        <div class="col-4">
-                            <img src="image/phv.png" class="img-fluid rounded-start" alt="...">
-                        </div>
-                        <div class="col-8">
-                            <div class="card-body">
-                                <h5 class="card-title">Cheeseburger</h5>
-                                <small><p class="card-text">Özel Yapım Hamburger Ekmeği İle Dana Kıymasıyla Hazırlanan Cheddar Peynir, Hamburger Köftesi, Marul, Domates, Kornişon Turşu Yanında Patates Kızartması Eşliginde</p></small>
-                                <p class="card-text red pt-2">35 ₺</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </section>
         <br>
 
         <button class="btn btn-secondary" type="button" onclick="topFunction()" id="myBtn" title="Go to top">
-            <p class="backtotop"><i class='bx bxs-to-top'></i></p>
+            <p class="backtotop p-0 m-0"><i class='bx bxs-to-top'></i></p>
         </button>
     </div>
 
